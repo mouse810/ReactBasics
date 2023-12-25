@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// 1.) Import React And React Libraries
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Time from "./Components/Time";
+import Input from "./Components/Input";
+import TextArea from "./Components/TextArea";
+import InputString from "./Components/InputString";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const element = document.getElementById('root');
+const root = ReactDOM.createRoot(element);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App = () => {
+
+     return <div>
+          <h2>Hello REACT-JS</h2>
+          {/* <Time />
+          <Input />
+          <TextArea />
+          <InputString /> */}
+     </div>
+}
+root.render(<App />);
